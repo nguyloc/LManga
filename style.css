@@ -1,0 +1,164 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    color: white;
+    background-color: #1B223C;
+}
+
+/* Header */
+.header {
+    background-color: #222F5C;
+    position: fixed;
+    width: 100%;
+    margin: 0px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+}
+
+.left img{
+    margin-right: 10px;
+    width: 11%;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+
+input {
+    padding: 20px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    width: 70%;
+}
+
+.right {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.right ul {
+    list-style: none; 
+    display: flex; 
+    margin: 0; 
+    padding: 0; 
+}
+
+.right li {
+    margin-right: 50px; 
+    border: 1px solid #ccc;
+    padding: 20px; 
+    border-radius: 20px;
+    background-color: #6C74FC;
+    width: 70px;
+    text-align: center;
+}
+
+.right a{
+    text-decoration: none;
+    color: white;
+}
+
+.right li:hover{
+    background-color: #1B223C;
+}
+
+/* Main */
+.container{
+    width: 70%;
+    margin:auto;
+    max-width: 200%;
+}
+
+.danhmuc{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px;
+}
+
+.danhmuc a{
+    text-decoration: none;
+    color: white;
+}
+
+.categories span{
+    margin-left: 10px;
+    border: 2px solid whitesmoke;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #222F5C;
+}
+
+.categories span:hover{
+    background-color: #6C74FC;
+}
+
+.comic-list {
+    display: grid; 
+    grid-template-columns: repeat(auto-fill, minmax(220px, 20px)); /* Tạo các cột có kích thước tối thiểu 150px */
+    gap: 20px; /* Khoảng cách giữa các mục */
+}
+
+.comic-item {
+    background-color: #6C74FC;
+    padding: 15px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    min-width: 150px; /* Đặt chiều rộng tối thiểu cho mỗi mục */
+    max-width: 200px; /* Đặt chiều rộng tối đa để tránh chiếm quá nhiều không gian */
+    height: 300px; /* Đặt chiều cao cố định cho mỗi mục để đồng nhất */
+}
+
+.comic-item img {
+    width: 100%; /* Hình ảnh chiếm toàn bộ chiều rộng khung */
+    height: 180px; /* Đặt chiều cao cố định cho hình ảnh */
+    object-fit: cover; /* Giữ tỷ lệ khung hình và cắt nếu cần */
+    border-radius: 5px;
+}
+
+.comic-item h2 {
+    font-size: 16px; /* Giảm kích thước chữ để phù hợp với không gian */
+    margin: 10px 0;
+    height: 40px; /* Đặt chiều cao cố định cho tên truyện */
+    overflow: hidden; /* Ẩn phần văn bản vượt quá chiều cao */
+    text-overflow: ellipsis; /* Thêm dấu ba chấm nếu văn bản dài */
+    white-space: nowrap; /* Không cho xuống dòng */
+}
+
+.comic-item p {
+    font-size: 14px; /* Đặt kích thước chữ cho chapter */
+    margin: 0; /* Không có khoảng cách trên và dưới */
+    height: 20px; /* Đặt chiều cao cố định cho chapter */
+    overflow: hidden; /* Ẩn phần văn bản vượt quá chiều cao */
+    text-overflow: ellipsis; /* Thêm dấu ba chấm nếu văn bản dài */
+    white-space: nowrap; /* Không cho xuống dòng */
+}
+
+.comic-item .info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin-top: auto; 
+}
+
+.thongbao img{
+    width: 100%;
+    margin-top: 120px;
+    border-radius: 20px;
+}
+
+footer {
+    background-color: #222F5C;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
